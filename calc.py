@@ -41,7 +41,7 @@ def verificarFecha(diaNacimiento,mesNacimiento,anioNacimiento):
             print ("la fecha de nacimiento ingresada no es válida. \n Cada dato debe ser del tipo entero positivo \n")
         return False
     
-# Esta funcion verifica que las semanas corizadas y años de insalubridad sean validos
+# Esta funcion verifica que las semanas cotizadas y años de insalubridad sean validos
 def verificacionSemCotizadas(semanasCotizadas):
     try:
         isinstance(semanasCotizadas, int)
@@ -133,7 +133,10 @@ def calificaParaLaPension(sexo,diaNacimiento,mesNacimiento,anioNacimiento,semana
     except ValueError:
         print("Todos los parámetros de la función deben ser enteros mayores o iguales que cero \n")
         return False
+
+
 #script de prueba
+#print("Fin")
 #print(calcular_edad(datetime.datetime(1995,11,2)))
 #booleano = calificaParaLaPension("MUJER",11, 10, 1964, 750, 20)
 #print(booleano)
