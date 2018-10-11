@@ -33,6 +33,19 @@ def verificarFecha(diaNacimiento,mesNacimiento,anioNacimiento):
             print ("la fecha de nacimiento ingresada no es válida. \n Cada dato debe ser del tipo entero positivo \n")
         return False
 
+# Esta funcion verifica que las semanas cortizadas sean validas 
+def verificacionSemCotizadas(semanasCotizadas):
+    try:
+        isinstance(semanasCotizadas, int)
+        if(semanasCotizadas < 0):
+            print("El número de semanas cotizadas  no puede ser un entero negativo \n")
+            return False
+        else:
+            return True
+    except:
+        print("El número de semanas cotizadas es un entero no negativo")
+        return False
 #print("La edad es: " + str(calcular_edad(datetime.datetime(1995,11,2)))+"años")
-x = verificarFecha(18,12,1988)
-print("La fecha cumple el formato? :" + str(x))
+#x = verificarFecha(18,12,1988)
+#print("La fecha cumple el formato? :" + str(x))
+verificacionSemCotizadas(-4)
