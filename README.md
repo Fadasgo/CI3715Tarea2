@@ -15,6 +15,6 @@ Este repositorio contiene nuestra solución planteada al problema propuesto en e
 de la programación dirigida por casos de prueba (TDD).
 
 Dentro del repositorio se encuentra:
-  * Carpeta Software I la cual es el proyecto de Eclipse listo para agregar al workspace
+  * Carpeta Software1 la cual es el proyecto de Eclipse listo para agregar al workspace.
   * Archivo calc.py y test_calc.py los cuales contienen el código final y las pruebas unitarias lista para ser ejecutadas 
     desde la terminal.
